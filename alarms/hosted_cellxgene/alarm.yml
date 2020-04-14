@@ -7,9 +7,16 @@ credentials_target_var: BRONZE_CREDENTIALS
 message: |
     :wave: Hello <!channel>! A new on-call rotation for hosted cellxgene is coming up:
 
-    *Primary:* {primary}
-    *Secondary:* {secondary}
-    *Start datetime:* {start_datetime}
-    *End datetime:* {start_datetime}
+    *Primary:* {current_primary}
+    *Secondary:* {current_secondary}
+    *Start datetime:* {current_start_datetime}
+    *End datetime:* {current_end_datetime}
 
-    *If you are listed as primary or secondary and cannot fulfill the responsibilities* this week please find a replacement and fix the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>
+    The next rotation will be:
+
+    *Primary:* {next_primary}
+    *Secondary:* {next_secondary}
+    *Start datetime:* {next_start_datetime}
+    *End datetime:* {next_end_datetime}
+
+    *If you are listed as primary or secondary and cannot be there* please find a replacement and fix the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>
