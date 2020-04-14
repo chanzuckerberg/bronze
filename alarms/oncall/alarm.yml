@@ -1,6 +1,6 @@
-name: hosted_cellxgene_reminder
+name: single_cell_engineering_team_oncall
 description: | 
-    On-call reminder for hosted cellxgene.
+    On-call reminder for the Single Cell Engineering Team.
 spreadsheet_target_var: ONCALL_ROTATION_SHEET_TARGET
 slack_channel_target_var: ONCALL_ROTATION_SLACK_TARGET
 credentials_target_var: BRONZE_CREDENTIALS
@@ -19,4 +19,4 @@ message: |
     *Start datetime:* {next_start_datetime}
     *End datetime:* {next_end_datetime}
 
-    *If you are listed as primary or secondary and cannot be there* please find a replacement and update the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>
+    *If you are listed as primary or secondary and cannot be there* please find a replacement and update the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|On-call Schedule>
