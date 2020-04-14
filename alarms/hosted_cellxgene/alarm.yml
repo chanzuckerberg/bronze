@@ -19,4 +19,4 @@ message: |
     *Start datetime:* {next_start_datetime}
     *End datetime:* {next_end_datetime}
 
-    *If you are listed as primary or secondary and cannot be there* please find a replacement and fix the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>
+    *If you are listed as primary or secondary and cannot be there* please find a replacement and update the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>
