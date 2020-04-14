@@ -81,7 +81,7 @@ def get_slack_mapping(
     spreadsheet: ss.SpreadSheetReader, remove_header: bool = True
 ) -> dict:
     """Load the `SlackIDs` sheet and construct a name -> slackID mapping dict."""
-    slack_user_mapping_list = spreadsheet.getSheet(sheet_name='SlackIDs', values=True)
+    slack_user_mapping_list = spreadsheet.getSheet(sheet_name='Slack IDs', values=True)
     if remove_header:
         slack_user_mapping_list.pop(0)  # remove the header
     return {

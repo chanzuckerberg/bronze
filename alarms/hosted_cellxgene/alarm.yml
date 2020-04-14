@@ -1,0 +1,15 @@
+name: hosted_cellxgene_reminder
+description: | 
+    On-call reminder for hosted cellxgene.
+spreadsheet_target_var: HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET
+slack_channel_target_var: HOSTED_CELLXGENE_ONCALL_ROTATION_SLACK_TARGET
+credentials_target_var: BRONZE_CREDENTIALS
+message: |
+    :wave: Hello <!channel>! A new on-call rotation for hosted cellxgene is coming up:
+
+    *Primary:* {primary}
+    *Secondary:* {secondary}
+    *Start datetime:* {start_datetime}
+    *End datetime:* {start_datetime}
+
+    *If you are listed as primary or secondary and cannot fulfill the responsibilities* this week please find a replacement and fix the <https://docs.google.com/spreadsheets/d/13PC0kkNcXMC4_7UJRgjQ6cEXxl5D58mxJD20mAMGImo/edit#gid=1508723546|Hosted-cellxgene on-call Rotation>

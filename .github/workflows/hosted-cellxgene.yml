@@ -1,0 +1,27 @@
+name: Hosted cellxgene on-call schedule
+
+on:
+  schedule:
+  - cron: '0 8 * * 3'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .
+      - name: Send message
+        env:
+          BRONZE_CREDENTIALS: ${{ secrets.BRONZE_CREDENTIALS }}
+          HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET: ${{ secrets.HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET }}
+          HOSTED_CELLXGENE_ONCALL_ROTATION_SLACK_TARGET: ${{ secrets.HOSTED_CELLXGENE_ONCALL_ROTATION_SLACK_TARGET }}
+        run: |
+          cd alarms/hosted_cellxgene/
+          python3 alarm.py
