@@ -1,4 +1,4 @@
-name: Hosted cellxgene on-call schedule
+name: Single Cell Engineering Team on-call schedule
 
 on:
   schedule:
@@ -23,5 +23,5 @@ jobs:
           ONCALL_ROTATION_SHEET_TARGET: ${{ secrets.ONCALL_ROTATION_SHEET_TARGET }}
           ONCALL_ROTATION_SLACK_TARGET: ${{ secrets.ONCALL_ROTATION_SLACK_TARGET }}
         run: |
-          cd alarms/hosted_cellxgene/
+          cd alarms/oncall/
           python3 alarm.py
