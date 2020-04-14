@@ -20,7 +20,7 @@ jobs:
       - name: Send message
         env:
           BRONZE_CREDENTIALS: ${{ secrets.BRONZE_CREDENTIALS }}
-          HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET: ${{ secrets.HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET }}
+          ONCALL_ROTATION_SHEET_TARGET: ${{ secrets.ONCALL_ROTATION_SHEET_TARGET }}
           ONCALL_ROTATION_SLACK_TARGET: ${{ secrets.ONCALL_ROTATION_SLACK_TARGET }}
         run: |
           cd alarms/hosted_cellxgene/

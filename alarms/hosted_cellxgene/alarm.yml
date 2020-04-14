@@ -1,11 +1,11 @@
 name: hosted_cellxgene_reminder
 description: | 
     On-call reminder for hosted cellxgene.
-spreadsheet_target_var: HOSTED_CELLXGENE_ONCALL_ROTATION_SHEET_TARGET
+spreadsheet_target_var: ONCALL_ROTATION_SHEET_TARGET
 slack_channel_target_var: ONCALL_ROTATION_SLACK_TARGET
 credentials_target_var: BRONZE_CREDENTIALS
 message: |
-    :wave: Hello <!channel>! A new on-call rotation for hosted cellxgene is coming up:
+    :wave: Hello <!channel>! A new on-call rotation starts today:
 
     *Primary:* {current_primary}
     *Secondary:* {current_secondary}
