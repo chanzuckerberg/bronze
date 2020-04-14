@@ -2,7 +2,7 @@ name: Single Cell Engineering Team on-call schedule
 
 on:
   schedule:
-  - cron: '0 8 * * 3'
+  - cron: '0 8 * * 1'
 
 jobs:
   notify:
